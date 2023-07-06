@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2AFFC107"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_main_activity_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hà Nội"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/iv_main_activity_status"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv_main_activity_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhiệt độ"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_main_activity_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_humidity"/>
+            <TextView
+                android:id="@+id/tv_main_activity_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Độ ẩm"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_cloud"/>
+            <TextView
+                android:id="@+id/tv_main_activity_cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Mây"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_mill" />
+
+            <TextView
+                android:id="@+id/tv_main_activity_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="vận tốc gió"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_main_activity_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/b_main_activity_next_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Các ngày tiếp theo"
+        android:backgroundTint="#6BFF5722"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+</LinearLayout>
